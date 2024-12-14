@@ -1,0 +1,22 @@
+/* bugSolution.css */
+
+.element::before {
+  content: ''; /* or content: " "; to add a space */
+  display: block;
+  background-image: url('background.png');
+  background-size: cover;
+  width: 100%; /* or use explicit px value */
+  height: 100px; /* or use explicit px value */
+  min-width: 1px; /* fix: ensure minimum width */
+  min-height: 1px; /* fix: ensure minimum height */
+}
+
+/*bug.css*/
+.element::before {
+  content: '';
+  display: block;
+  background-image: url('background.png');
+  background-size: cover;
+  width: 100%;
+  height: 100px;
+}
